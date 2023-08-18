@@ -739,6 +739,7 @@ svg {
 }
 
 .modal-form {
+  margin-top: 16px;
 }
 
 .modal-form-label {
@@ -748,8 +749,6 @@ svg {
 
 .modal-form-input-container {
   position: relative;
-  /* to remove */
-  margin-bottom: 8px;
 }
 
 .modal-form-input {

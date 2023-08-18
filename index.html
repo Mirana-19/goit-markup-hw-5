@@ -546,10 +546,10 @@
           </div>
           <!-- User comment -->
           <div class="modal-wrapper">
-            <label for="user_comment" class="modal-form-label">Comment</label>
+            <label for="user-comment" class="modal-form-label">Comment</label>
             <textarea
-              name="user_comment"
-              id="user_comment"
+              name="user-comment"
+              id="user-comment"
               rows="7"
               placeholder="Text input"
               class="modal-form-textarea"
@@ -558,23 +558,26 @@
           </div>
 
           <!-- Policy Agreement -->
-          <label class="modal-form-label">
+          <div class="modal-wrapper">
             <input
               type="checkbox"
               name="user_agreement"
-              id="user_agreement"
+              id="user-privacy"
               class="visually-hidden"
+              value="true"
               required
             />
-            <span class="custom-checkbox"
-              ><svg class="custom-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#tick"></use></svg
-            ></span>
-            <span
-              >I accept the terms and conditions of the
-              <a href="#" class="user-agreement-link">Privacy Policy</a></span
-            >
-          </label>
+            <label for="user-privacy" class="modal-form-label">
+              <span class="custom-checkbox"
+                ><svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#tick"></use></svg
+              ></span>
+              <span
+                >I accept the terms and conditions of the
+                <a href="#" class="user-agreement-link">Privacy Policy</a></span
+              >
+            </label>
+          </div>
 
           <!-- Submit btn -->
           <button class="modal-form-button main-btn btn" type="submit">Send</button>
