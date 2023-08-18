@@ -759,7 +759,7 @@ svg {
   color: var(--subtle-text-color);
 }
 
-.modal-form-label:not(:last-of-type) {
+.modal-form-label:not(:last-child) {
   margin-bottom: 4px;
 }
 
@@ -842,7 +842,6 @@ svg {
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  pointer-events: none;
 
   transition:
     fill var(--time) var(--cubic),
@@ -851,7 +850,6 @@ svg {
 }
 
 .custom-checkbox-icon {
-  fill: inherit;
 }
 
 input:checked + .modal-form-label .custom-checkbox {
