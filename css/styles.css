@@ -586,13 +586,14 @@ svg {
 .subscribe-form {
   display: flex;
   margin-top: 16px;
+  gap: 24px;
 }
 .subscribe-form-label {
 }
 .subscribe-form-input {
   height: 40px;
   width: 264px;
-  margin-right: 24px;
+
   padding: 8px 16px;
 
   color: var(--white-color);
@@ -721,6 +722,9 @@ svg {
   color: var(--dark-color);
   text-align: center;
   font-weight: 500;
+
+  /* to remove */
+  margin-bottom: 16px;
 }
 
 .modal-form {
@@ -729,7 +733,8 @@ svg {
 .modal-text-input-container {
   display: flex;
   flex-direction: column;
-  padding: 16px 0;
+  /* to remove first 0 and add 16 */
+  padding: 0 0;
 }
 
 .modal-form-label {
@@ -741,12 +746,15 @@ svg {
 
 .modal-form-input-container {
   position: relative;
+  /* to remove */
+  margin-bottom: 8px;
 }
 
 .modal-form-input {
   height: 40px;
   padding: 8px 16px;
   padding-left: 38px;
+  background-color: transparent;
 }
 
 .modal-form-input-icon {
@@ -767,6 +775,7 @@ svg {
   padding: 8px 16px;
   resize: none;
   font-size: 12px;
+  background-color: transparent;
 }
 
 .modal-form-input-container,
@@ -789,6 +798,8 @@ svg {
   outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+
+  transition: border-color var(--time) var(--cubic);
 }
 
 .modal-form-input:focus,
