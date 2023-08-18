@@ -796,7 +796,9 @@ svg {
 }
 
 .modal-form-label,
-.modal-form-textarea::placeholder {
+.modal-form-textarea::placeholder,
+.modal-form-input,
+.modal-form-textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -806,9 +808,6 @@ svg {
 .modal-form-textarea {
   width: 100%;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   outline: transparent;
   background-color: transparent;
   border-radius: 4px;
@@ -819,7 +818,6 @@ svg {
 
 .modal-form-input:focus,
 .modal-form-textarea:focus {
-  border-radius: 4px;
   border: 1px solid var(--primary-brand-color);
   fill: var(--primary-brand-color);
 }
