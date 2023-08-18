@@ -104,9 +104,6 @@ svg {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  /* to remove */
-  margin-bottom: 16px;
 }
 
 /* Section */
@@ -632,15 +629,13 @@ svg {
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
-  /* gap: 16px; */
+  gap: 16px;
   min-width: 165px;
 
   border-radius: 4px;
 }
 
 .subscribe-form-btn-icon {
-  /* to remove and add gap in btn*/
-  margin-left: 16px;
 }
 
 /**
