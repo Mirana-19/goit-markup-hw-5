@@ -104,6 +104,9 @@ svg {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  /* to remove */
+  margin-bottom: 16px;
 }
 
 /* Section */
@@ -581,8 +584,7 @@ svg {
 
 .subscribe-form-container {
 }
-.form-title {
-}
+
 .subscribe-form {
   display: flex;
   margin-top: 16px;
@@ -596,8 +598,13 @@ svg {
 
   padding: 8px 16px;
 
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
   color: var(--white-color);
   border: 1px solid var(--white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   outline: none;
   border-radius: 4px;
@@ -622,14 +629,18 @@ svg {
 
 .subscribe-form-btn {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 24px;
-  gap: 16px;
+  /* gap: 16px; */
   min-width: 165px;
 
   border-radius: 4px;
 }
 
 .subscribe-form-btn-icon {
+  /* to remove and add gap in btn*/
+  margin-left: 16px;
 }
 
 /**
@@ -730,18 +741,9 @@ svg {
 .modal-form {
 }
 
-.modal-text-input-container {
-  display: flex;
-  flex-direction: column;
-  /* to remove first 0 and add 16 */
-  padding: 0 0;
-}
-
 .modal-form-label {
-}
-
-.modal-text-input-container .modal-form-label:not(:first-child) {
-  margin-top: 8px;
+  display: block;
+  color: var(--subtle-text-color);
 }
 
 .modal-form-input-container {
@@ -754,7 +756,6 @@ svg {
   height: 40px;
   padding: 8px 16px;
   padding-left: 38px;
-  background-color: transparent;
 }
 
 .modal-form-input-icon {
@@ -773,9 +774,15 @@ svg {
 .modal-form-textarea {
   height: 120px;
   padding: 8px 16px;
+
   resize: none;
-  font-size: 12px;
-  background-color: transparent;
+
+  color: rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-form-textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-input-container,
@@ -785,7 +792,6 @@ svg {
 
 .modal-form-label,
 .modal-form-textarea::placeholder {
-  color: var(--subtle-text-color);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -795,7 +801,11 @@ svg {
 .modal-form-textarea {
   width: 100%;
 
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   outline: transparent;
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
