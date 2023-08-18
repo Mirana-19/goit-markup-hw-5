@@ -742,8 +742,16 @@ svg {
 .modal-wrapper {
 }
 
-.modal-wrapper:not(:last-child) {
+.modal-wrapper {
   margin-bottom: 8px;
+}
+
+.modal-wrapper.textarea-wrapper {
+  margin-bottom: 16px;
+}
+
+.modal-wrapper:last-of-type {
+  margin-bottom: 24px;
 }
 
 .modal-form-label {
@@ -751,7 +759,7 @@ svg {
   color: var(--subtle-text-color);
 }
 
-.modal-form-label.btn-list-item:not(:last-of-type) {
+.modal-form-label:not(:last-of-type) {
   margin-bottom: 4px;
 }
 
@@ -830,26 +838,26 @@ svg {
   width: 16px;
   height: 16px;
 
-  color: transparent;
+  fill: transparent;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 3px;
+  border-radius: 2px;
   pointer-events: none;
 
   transition:
-    color var(--time) var(--cubic),
+    fill var(--time) var(--cubic),
     background-color var(--time) var(--cubic),
-    border-color var(--time) var(--cubic);
+    border var(--time) var(--cubic);
 }
 
 .custom-checkbox-icon {
-  fill: currentColor;
+  fill: inherit;
 }
 
 input[type='checkbox']:checked + .modal-form-label > .custom-checkbox {
-  color: var(--light-color);
+  fill: var(--light-color);
   background-color: var(--pressed-state-color);
-  border-color: var(--pressed-state-color);
+  border: none;
 }
 
 .user-agreement-link {
