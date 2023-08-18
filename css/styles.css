@@ -733,18 +733,26 @@ svg {
   color: var(--dark-color);
   text-align: center;
   font-weight: 500;
-
-  /* to remove */
   margin-bottom: 16px;
 }
 
 .modal-form {
-  margin-top: 16px;
+}
+
+.modal-wrapper {
+}
+
+.modal-wrapper:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .modal-form-label {
   display: block;
   color: var(--subtle-text-color);
+}
+
+.modal-form-label.btn-list-item:not(:last-of-type) {
+  margin-bottom: 4px;
 }
 
 .modal-form-input-container {
@@ -782,11 +790,6 @@ svg {
 
 .modal-form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
-}
-
-.modal-form-input-container,
-.modal-form-textarea {
-  margin-top: 4px;
 }
 
 .modal-form-label,
@@ -843,7 +846,7 @@ svg {
   fill: currentColor;
 }
 
-input[type='checkbox']:checked + .custom-checkbox {
+input[type='checkbox']:checked + .modal-form-label > .custom-checkbox {
   color: var(--light-color);
   background-color: var(--pressed-state-color);
   border-color: var(--pressed-state-color);
