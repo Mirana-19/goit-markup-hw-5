@@ -746,7 +746,7 @@ svg {
   margin-bottom: 8px;
 }
 
-.textarea-wrapper {
+.modal-wrapper.textarea-wrapper {
   margin-bottom: 16px;
 }
 
@@ -759,7 +759,7 @@ svg {
   color: var(--subtle-text-color);
 }
 
-.modal-form-label {
+.modal-form-label:not(:last-of-type) {
   margin-bottom: 4px;
 }
 
@@ -854,9 +854,9 @@ svg {
   fill: inherit;
 }
 
-input:checked + .modal-form-label > .custom-checkbox {
-  fill: var(--light-color);
+input:checked + .modal-form-label .custom-checkbox {
   background-color: var(--pressed-state-color);
+  fill: var(--light-color);
   border: none;
 }
 
